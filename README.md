@@ -16,7 +16,7 @@ docker build -t ansible-junos:0.1 .
 3 Run Ansible-junos container:
 ```
 docker run -it ansible_junos:0.1 bash
-
+```
 
 ##Optional 
 
@@ -26,6 +26,6 @@ root@8834f7426e1a:/# cp /tmp/example/etc/ansible/hosts /etc/ansible/hosts
 ```
 5 Run test playbook:
  ```
-root@8834f7426e1a:/# ansible-playbook cp /tmp/example/etc/ansible/hosts /etc/ansible/hosts
+root@8834f7426e1a:/# ansible-playbook /tmp/example/TestPlaybook.yml
  ```
  
