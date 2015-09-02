@@ -23,7 +23,8 @@ RUN pip install ansible
 RUN ansible-galaxy install Juniper.junos
 
 #4 - Clean up
-
 RUN apt-get clean &&\ 
 apt-get purge
 
+#Optional - Copy example files
+ADD ./example /tmp/example
