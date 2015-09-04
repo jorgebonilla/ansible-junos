@@ -1,8 +1,11 @@
 # Ansible-junos
 Dockerfile to deploy Ansible on Ubuntu 12.04 + ansible + pyez-nc
 
-Usage
-===
+### Prerequisites
+Install [docker] (https://docs.docker.com/installation/ "Docker")
+
+###Usage
+
 
 1 Download from git repository
 ```
@@ -18,7 +21,7 @@ docker build -t ansible-junos:0.1 .
 docker run -it ansible_junos:0.1 bash
 ```
 
-##Optional 
+####Optional 
 
 4 Load the example host file and modify accordingly 
 ```
@@ -29,3 +32,4 @@ root@8834f7426e1a:/# cp /tmp/example/etc/ansible/hosts /etc/ansible/hosts
 root@8834f7426e1a:/# ansible-playbook /tmp/example/TestPlaybook.yml
  ```
  
+If this was helpfull to you in anyway, please feel free to drop a tip @ [1GkYUGuqgXaV2dpdkZAC97ytYaKRFKdVqT](bitcoin:1GkYUGuqgXaV2dpdkZAC97ytYaKRFKdVqT "Bitcoin Address")
