@@ -17,7 +17,7 @@ RUN pip install junos-eznc
 RUN pip install junos-netconify
 
 #2 Install Ansible
-RUN pip install ansible
+RUN pip install ansible && mkdir /etc/ansible
 
 #3 - Install Junos Galaxy on ansible
 RUN ansible-galaxy install Juniper.junos
