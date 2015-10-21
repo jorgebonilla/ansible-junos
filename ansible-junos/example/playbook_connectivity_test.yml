@@ -1,0 +1,10 @@
+---
+- name: Check if NETCONF is configured and accesible
+  hosts: ALL
+  roles:
+  - Juniper.junos
+  connection: local
+  gather_facts: no
+
+   - name: Checking NETCONF connectivity
+     wait_for: host={{ inventory_hostname }} port=830  timeout=5
