@@ -14,8 +14,7 @@ RUN apt-get clean &&\
 apt-get purge
 
 #4 - Ports
-EXPOSE 21/tcp
-EXPOSE 67/udp 68/udp
+EXPOSE 67/udp 68/udp 21/tcp
 
 #5 - Copy configuration file
 COPY dhcpd.conf /etc/dhcp/dhcpd.conf
