@@ -3,3 +3,4 @@ ansible-junos:
 
 dhcpd-docker:
   build: ./dhcpd-docker
+  net: "host"
