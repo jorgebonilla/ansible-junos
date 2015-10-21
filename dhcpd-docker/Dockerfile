@@ -22,6 +22,7 @@ RUN chmod 777 var/lib/dhcp/dhcpd.leases
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
+RUN mkdir -p /var/run/vsftpd/empty
 ADD ./resources /srv/ftp/resources
 
 

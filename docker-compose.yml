@@ -1,0 +1,5 @@
+ansible-junos:
+  build: ./ansible-junos
+
+dhcpd-docker:
+  build: ./dhcpd-docker

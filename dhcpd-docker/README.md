@@ -48,9 +48,9 @@ cd ./ansible-junos/dhcpd-docker/resources/<switch model>/Junos_image_file.tar.gz
 
 1 Build docker image:
 ```
-docker build -t dhcpd_server:0.1 .
+docker build -t dhcpd_server:latest .
 ```
 2 Run Ansible-junos container:
 ```
-docker run -d --net=host dhcpd_server:0.1
+docker run -d --net=host dhcpd_server
 ```
