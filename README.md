@@ -6,7 +6,7 @@ Install [docker] (https://docs.docker.com/installation/ "Docker")
 
 ###Usage
 
-### From Hub.docker.com
+### From docker hub
 1 Download the docker image from hub.docker.com
 ```
 docker pull jorgebonilla/ansible-junos
