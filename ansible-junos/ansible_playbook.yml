@@ -1,0 +1,20 @@
+#Run this playbook on your ansible server to install all library necessary for Junos.
+#/etc/ansible/hosts should have an entry like this:
+#[ansible-server]
+#<<IP address>> ansible_connection=local
+
+- hosts: ansible-server
+  tasks:
+    - name: Installs packages required for Ansible with Junos
+      apt: pkg=python-pip update_cache=true
+      apt: pkg=python-dev update_cache=true
+      apt: pkg=libxml2-dev update_cache=true
+      apt: pkg=libxslt1-dev update_cache=true
+      apt: pkg=openssl update_cache=true
+      apt: pkg=ca-certificate update_cache=true
+      apt: pkg=ssh update_cache=true
+  tasks:
+    - name: Install pip libraries for Junos
+      pip: name=ncclient
+      pip: name=junos-eznc
+      pip: name=junos-netconify
