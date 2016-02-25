@@ -6,6 +6,18 @@ Install [docker] (https://docs.docker.com/installation/ "Docker")
 
 ###Usage
 
+### From docker hub
+1 Download the docker image from hub.docker.com
+```
+docker pull jorgebonilla/ansible-junos
+```
+2 Run Ansible-junos container:
+```
+docker run -it jorgebonilla/ansible-junos bash
+```
+See optional steps below.
+
+###To build from source
 
 1 Download from git repository
 ```

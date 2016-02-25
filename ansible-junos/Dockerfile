@@ -9,7 +9,7 @@ RUN apt-get update
 
 #2 Install junos-eznc
 
-RUN apt-get install -y python-pip python-dev libxml2-dev libxslt1-dev openssl ca-certificates
+RUN apt-get install -y python-pip python-dev libxml2-dev libxslt1-dev openssl ca-certificates ssh
 RUN pip install ncclient
 RUN pip install junos-eznc 
 
