@@ -1,5 +1,5 @@
 # Ansible-junos
-Dockerfile to deploy Ansible on Ubuntu 12.04 + ansible + pyez-nc
+Dockerfile to deploy Ansible on Ubuntu 14.04 + ansible + pyez-nc
 
 ### Prerequisites
 Install [docker] (https://docs.docker.com/installation/ "Docker")
