@@ -13,7 +13,7 @@ RUN apt-get install -y python-pip python-dev  python-lxml libxml2-dev libxslt1-d
 
 #Required for cryptography (which is required by ncclient)
 RUN apt-get install -y build-essential libssl-dev libffi-dev
-
+RUN pip install cryptography==1.2.1
 RUN pip install ncclient
 RUN pip install junos-eznc
 
